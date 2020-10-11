@@ -215,8 +215,8 @@ GameObject:
   - component: {fileID: 558514604}
   - component: {fileID: 558514603}
   - component: {fileID: 558514606}
-  - component: {fileID: 558514605}
   - component: {fileID: 558514602}
+  - component: {fileID: 558514605}
   m_Layer: 0
   m_Name: maxresdefault
   m_TagString: Untagged
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a195d17a70a221cc2b4ca31daded969d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 5
 --- !u!212 &558514603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -341,13 +341,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 1000000
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1001052100
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +358,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1001052102}
   - component: {fileID: 1001052101}
-  - component: {fileID: 1001052104}
   - component: {fileID: 1001052103}
+  - component: {fileID: 1001052104}
   m_Layer: 0
   m_Name: 100oboi_ru_komar_8_741_backstein
   m_TagString: Untagged
@@ -488,8 +488,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1634512319}
   - component: {fileID: 1634512318}
-  - component: {fileID: 1634512321}
   - component: {fileID: 1634512320}
+  - component: {fileID: 1634512321}
   m_Layer: 0
   m_Name: 100oboi_ru_komar_8_741_backstein (1)
   m_TagString: Untagged
@@ -605,6 +605,6 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
