@@ -8,7 +8,7 @@ namespace localization
 	/// </summary>
 	public class InitLocalization : MonoBehaviour
 	{
-		public void Awake()
+		public void Standart()
 		{
 			LocalizationManager.Read();
 
@@ -22,5 +22,11 @@ namespace localization
 					break;
 			}
 		}
+
+		public void SetLanguage(string language)
+		{
+			LocalizationManager.Language = language;
+		}
 	}
+	
 }

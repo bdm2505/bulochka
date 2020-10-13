@@ -43,7 +43,7 @@ namespace localization
 		/// </summary>
 		public static void Read(string path = "localization")
         {
-	        Debug.Log("read localization");
+	        Debug.Log("read localization " + Dictionary.Count);
             if (Dictionary.Count > 0) return;
 
             var textAssets = Resources.LoadAll<TextAsset>(path);
@@ -86,7 +86,7 @@ namespace localization
             AutoLanguage();
         }
 
-	    public static bool HasKey(string localizationKey)
+		public static bool HasKey(string localizationKey)
 	    {
 		    return Dictionary[Language].ContainsKey(localizationKey);
 	    }
@@ -110,7 +110,7 @@ namespace localization
 		        if(Language != "Russian")
 			        Debug.LogWarning("Translation not found: '" + localizationKey + "' lang=" + Language);
 
-		        return Dictionary["Russian"].ContainsKey(localizationKey) ? Dictionary["Russian"][localizationKey] : localizationKey;
+		        return localizationKey;
 	        }
 
 	        return Dictionary[Language][localizationKey];
