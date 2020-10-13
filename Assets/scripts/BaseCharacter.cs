@@ -8,27 +8,35 @@ public class BaseCharacter : MonoBehaviour
 
     public float speed = 5f;
     private Rigidbody2D body;
-    public Joystick joystick;
+    private MoveController[] controllers;
+    
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        controllers = GetComponents<MoveController>();
     }
-    public virtual void Move(Vector2 moveTo)
+    public void Move(Vector2 moveTo)
     {
         if (moveTo.x > 0)
             transform.rotation = Quaternion.Euler(0,180,0);
         if (moveTo.x < 0)
             transform.rotation = Quaternion.Euler(0, 0, 0);
-        body.MovePosition(body.position + moveTo* speed * Time.deltaTime);
+        body.MovePosition(body.position + moveTo * (speed * Time.deltaTime));
+    }
+
+    public Vector2 CalculateMoveVector()
+    {
+        var vector = Vector2.zero;
+        foreach (var controller in controllers)
+        {
+            vector += controller.Movies();
+        }
+
+        return vector;
     }
     void FixedUpdate()
     {
-        if (joystick != null)
-        {
-            Move(new Vector2(joystick.Horizontal, joystick.Vertical));
-
-        }
-        else Debug.Log("Joystick not found");
+        Move(CalculateMoveVector());
     }
 }
