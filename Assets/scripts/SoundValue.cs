@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class SoundValue : MonoBehaviour
 {
-    private AudioSource audioSrc;
-    private float musicVol = 1f;
+    public AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
+        if (!PlayerPrefs.HasKey("volume")) audioSrc.volume = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        audioSrc.volume = musicVol;
-    }
-    public void SetVolume(float vol) 
-    {
-        musicVol = vol;
+        audioSrc.volume = PlayerPrefs.GetFloat("volume");
     }
 }
