@@ -7,6 +7,7 @@ public class SliderControl : MonoBehaviour
 {
     public Scrollbar slider;
     public float oldVolume;
+    public GameObject guiTextLink;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class SliderControl : MonoBehaviour
         else 
         {
             slider.value = PlayerPrefs.GetFloat("volume");
-        }
+        } 
     }
 
     // Update is called once per frame
@@ -27,5 +28,6 @@ public class SliderControl : MonoBehaviour
             PlayerPrefs.Save();
             oldVolume = slider.value;
         }
+        guiTextLink.GetComponent<Text>().text = ((int)(PlayerPrefs.GetFloat("volume")*100)).ToString() + "%";
     }
 }
