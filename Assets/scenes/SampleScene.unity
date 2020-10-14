@@ -636,6 +636,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463326950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8170153791668043265, guid: 0d230cc8be529a542a08cb878ab14b18,
+    type: 3}
+  m_PrefabInstance: {fileID: 2028047505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1859461211
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +877,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2298770441099406393, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1463326950}
     - target: {fileID: 6036155084319659510, guid: c3a95e5f8b6d42a74a59962f615b6603,
         type: 3}
       propertyPath: m_LocalPosition.x
