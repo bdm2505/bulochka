@@ -1,0 +1,27 @@
+
+shuimuniang03sj.png
+size: 462,315
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slj0000
+  rotate: true
+  xy: 2, 148
+  size: 165, 319
+  orig: 200, 325
+  offset: 24, 4
+  index: -1
+slj0001
+  rotate: true
+  xy: 2, 2
+  size: 144, 312
+  orig: 200, 325
+  offset: 29, 11
+  index: -1
+slj0002
+  rotate: false
+  xy: 323, 5
+  size: 137, 308
+  orig: 200, 325
+  offset: 35, 11
+  index: -1

@@ -11,14 +11,7 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
-    public void Score()
-    {
 
-    }
-    public void Settings()
-    {
-
-    }
     public void Exit()
     {
         Application.Quit();
