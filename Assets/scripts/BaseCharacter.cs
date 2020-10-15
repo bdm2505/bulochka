@@ -24,7 +24,7 @@ public class BaseCharacter : MonoBehaviour
     }
     public void Move(Vector2 moveTo)
     {
-        if (moveTo.x >= 0)
+        if (moveTo.x > 0)
             SetRotation(-1f);
 
         if (moveTo.x < 0)
