@@ -1,0 +1,111 @@
+
+shuimuniangbuff02.png
+size: 464,313
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao/02dun/00000
+  rotate: true
+  xy: 127, 13
+  size: 149, 61
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00002
+  rotate: true
+  xy: 1, 163
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00004
+  rotate: false
+  xy: 316, 187
+  size: 146, 62
+  orig: 149, 62
+  offset: 3, 0
+  index: -1
+texiao/02dun/00006
+  rotate: true
+  xy: 190, 164
+  size: 148, 62
+  orig: 149, 62
+  offset: 1, 0
+  index: -1
+texiao/02dun/00008
+  rotate: true
+  xy: 1, 13
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00010
+  rotate: true
+  xy: 251, 15
+  size: 148, 62
+  orig: 149, 62
+  offset: 1, 0
+  index: -1
+texiao/02dun/00012
+  rotate: true
+  xy: 253, 165
+  size: 147, 62
+  orig: 149, 62
+  offset: 2, 0
+  index: -1
+texiao/02dun/00014
+  rotate: true
+  xy: 189, 13
+  size: 149, 61
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00016
+  rotate: true
+  xy: 64, 163
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00018
+  rotate: false
+  xy: 316, 124
+  size: 146, 62
+  orig: 149, 62
+  offset: 2, 0
+  index: -1
+texiao/02dun/00020
+  rotate: false
+  xy: 314, 1
+  size: 144, 60
+  orig: 149, 62
+  offset: 4, 0
+  index: -1
+texiao/02dun/00022
+  rotate: true
+  xy: 64, 13
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00024
+  rotate: true
+  xy: 127, 163
+  size: 149, 62
+  orig: 149, 62
+  offset: 0, 0
+  index: -1
+texiao/02dun/00026
+  rotate: false
+  xy: 316, 250
+  size: 147, 62
+  orig: 149, 62
+  offset: 2, 0
+  index: -1
+texiao/02dun/00028
+  rotate: false
+  xy: 314, 62
+  size: 145, 61
+  orig: 149, 62
+  offset: 4, 0
+  index: -1

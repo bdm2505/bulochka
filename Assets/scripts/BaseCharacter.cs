@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BaseCharacter : MonoBehaviour
 {
@@ -9,20 +10,34 @@ public class BaseCharacter : MonoBehaviour
     public float speed = 5f;
     private Rigidbody2D body;
     private MoveController[] controllers;
+
+    public MoveEvent _event;
     
 
     void Start()
     {
+        if (_event == null)
+            _event = new MoveEvent();
+        
         body = GetComponent<Rigidbody2D>();
         controllers = GetComponents<MoveController>();
     }
     public void Move(Vector2 moveTo)
     {
         if (moveTo.x > 0)
-            transform.rotation = Quaternion.Euler(0,180,0);
+            SetRotation(-1f);
+
         if (moveTo.x < 0)
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        body.MovePosition(body.position + moveTo * (speed * Time.deltaTime));
+            SetRotation(1f);
+        var vec = moveTo * (speed * Time.deltaTime);
+        _event.Invoke(vec);
+        body.MovePosition(body.position + vec);
+    }
+
+    private void SetRotation(float vec)
+    {
+        var s = transform.localScale;
+        transform.localScale = new Vector3(vec * Math.Abs(s.x), s.y, s.z);
     }
 
     public Vector2 CalculateMoveVector()
