@@ -10,6 +10,7 @@ public class BaseCharacter : MonoBehaviour
     public float speed = 5f;
     private Rigidbody2D body;
     private MoveController[] controllers;
+    public SpriteRenderer sword;
 
     public MoveEvent _event;
     
@@ -26,10 +27,17 @@ public class BaseCharacter : MonoBehaviour
     {
         Debug.Log("Move");
         if (moveTo.x > 0)
+        {
             SetRotation(1);
+            sword.sortingOrder = 0;
+        }
 
         if (moveTo.x < 0)
+        {
             SetRotation(0);
+            sword.sortingOrder = 4;
+        }
+            
         var vec = moveTo * (speed * Time.deltaTime);
         _event.Invoke(vec);
         body.MovePosition(body.position + vec);
