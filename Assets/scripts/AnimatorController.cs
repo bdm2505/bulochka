@@ -13,7 +13,6 @@ public class AnimatorController : MonoBehaviour
 
     public void OnMove(Vector2 vec)
     {
-        print("asd " + vec);
         _animator.Play(vec.x == 0 ? "Idle" : "Run");
     }
 }
