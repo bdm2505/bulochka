@@ -13,21 +13,28 @@ public class Dialog : MonoBehaviour
     private Text text;
     private Image image;
     private int current_id = 0;
-    private Button open;
+    public Button open;
     private bool isOpenButton;
     private Image openImage;
+    private Animator animator;
 
     void Start()
     {
         dialog = GetComponent<Button>();
-        open = GetComponentsInChildren<Button>()[1];
-        open.onClick.AddListener(ClickOpenButton);
-        openImage = open.GetComponent<Image>();
+        
+        open.onClick.AddListener(Enabled);
+        
         children = GetComponentsInChildren<MaskableGraphic>();
         text = GetComponentInChildren<Text>();
         image = GetComponentsInChildren<Image>()[1]; 
         dialog.onClick.AddListener(NextKey);
-        SetEnabled(false);
+        animator = GetComponent<Animator>();
+        if (open)
+        {
+            openImage = open.GetComponent<Image>();
+            open.enabled = false;
+            openImage.enabled = false;
+        }
     }
 
     private void NextKey()
@@ -39,21 +46,20 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            SetEnabled(false);
+            CloseDialog();
         }
     }
 
-    private void ClickOpenButton()
+    
+    private void Enabled()
     {
-        SetEnabled(true);
-    }
-    private void SetEnabled(bool e)
-    {
-        dialog.enabled = e;
-        foreach (var component in children)
-            component.enabled = e;
-        open.enabled = false;
-        openImage.enabled = false;
+        animator.Play("MoveUp");
+        if (open)
+        {
+            open.enabled = false;
+            openImage.enabled = false;
+        }
+
     }
 
     private void UpdateText()
@@ -67,19 +73,21 @@ public class Dialog : MonoBehaviour
         current_id = 0;
         image.sprite = sprite;
         keys = strings;
-        if (isOpenButton)
+        if (open && isOpenButton)
         {
             open.enabled = true;
             openImage.enabled = true;
         }
         else
-            SetEnabled(true);
+            Enabled();
         UpdateText();
     }
 
     public void CloseDialog()
     {
-        SetEnabled(false);
+        animator.Play("MoveDown");
+        open.enabled = false;
+        openImage.enabled = false;
     }
 
 }
