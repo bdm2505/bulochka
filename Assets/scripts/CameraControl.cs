@@ -28,10 +28,18 @@ public class CameraControl : MonoBehaviour
 	{
 		if (player)
 		{
+				print("camera " + character.speed);
 			offset = character.CalculateMoveVector() * 5;
 
 			var target = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
-			
+			if (target.x < min_x)
+				target.x = min_x;
+			else if (target.x > max_x)
+				target.x = max_x;
+			if (target.y < min_y)
+				target.y = min_y;
+			else if (target.y > max_y)
+				target.y = max_y;
 
 			Vector3 currentPosition = Vector3.Lerp(transform.position, target, damping * Time.deltaTime);
 			transform.position = currentPosition;
