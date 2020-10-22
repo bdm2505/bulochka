@@ -44,7 +44,7 @@ public class BaseCharacter : MonoBehaviour
     }
 
     private void SetRotation(float vec)
-    {
+    {     
         transform.rotation = Quaternion.Euler(0, 180 * vec, 0);
     }
 

@@ -12,7 +12,8 @@ public class DialogOpen : MonoBehaviour
     public string [] keys;
     public GameObject player;
     public Sprite icon;
-
+    public bool isOpenButton;
+    
     void Start()
     {
         if (!player)
@@ -21,7 +22,7 @@ public class DialogOpen : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject == player)
-            dialog.OpenDialog(icon, keys);
+            dialog.OpenDialog(icon, keys, isOpenButton);
     }
 
     private void OnTriggerExit2D(Collider2D col)
