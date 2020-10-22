@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damping: 1.5
-  player: {fileID: 0}
+  player: {fileID: 1089869113}
   container: {fileID: 0}
 --- !u!1 &227837345
 GameObject:
@@ -1044,7 +1044,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 157020434}
-  m_PlaneDistance: -100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1144,6 +1144,12 @@ Transform:
 --- !u!1 &1089869107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6038775311356992270, guid: c3a95e5f8b6d42a74a59962f615b6603,
+    type: 3}
+  m_PrefabInstance: {fileID: 6037748960244403350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1089869113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6036155084319659510, guid: c3a95e5f8b6d42a74a59962f615b6603,
     type: 3}
   m_PrefabInstance: {fileID: 6037748960244403350}
   m_PrefabAsset: {fileID: 0}
@@ -1705,6 +1711,41 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1463326950}
+    - target: {fileID: 5853281133777081160, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853366710348290844, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6036155084319659510, guid: c3a95e5f8b6d42a74a59962f615b6603,
         type: 3}
       propertyPath: m_LocalPosition.x

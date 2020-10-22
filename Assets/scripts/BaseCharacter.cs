@@ -24,6 +24,7 @@ public class BaseCharacter : MonoBehaviour
     }
     public void Move(Vector2 moveTo)
     {
+        Debug.Log("Move");
         if (moveTo.x > 0)
             SetRotation(1);
 
