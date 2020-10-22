@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 574822872}
   - component: {fileID: 574822871}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Backgorund
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 1720292617}
   - component: {fileID: 1720292616}
   m_Layer: 5
-  m_Name: Image
+  m_Name: cloud_effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1384,9 +1384,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -135.88, y: -208.56}
-  m_SizeDelta: {x: -75.90662, y: -240.66223}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 264.12, y: -8.559998}
+  m_SizeDelta: {x: 724.0934, y: 159.33777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1720292616
 MonoBehaviour:
