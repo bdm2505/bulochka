@@ -25,10 +25,10 @@ public class BaseCharacter : MonoBehaviour
     public void Move(Vector2 moveTo)
     {
         if (moveTo.x > 0)
-            SetRotation(-1f);
+            SetRotation(1);
 
         if (moveTo.x < 0)
-            SetRotation(1f);
+            SetRotation(0);
         var vec = moveTo * (speed * Time.deltaTime);
         _event.Invoke(vec);
         body.MovePosition(body.position + vec);
@@ -37,7 +37,7 @@ public class BaseCharacter : MonoBehaviour
     private void SetRotation(float vec)
     {
         var s = transform.localScale;
-        transform.localScale = new Vector3(vec * Math.Abs(s.x), s.y, s.z);
+        transform.rotation = Quaternion.Euler(0, 180 * vec, 0);
     }
 
     public Vector2 CalculateMoveVector()
