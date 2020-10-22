@@ -1738,40 +1738,10 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1463326950}
-    - target: {fileID: 5853281133777081160, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5853366710348290844, guid: c3a95e5f8b6d42a74a59962f615b6603,
         type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_MaskInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_SpriteTileMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854169867803943136, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_FlipY
-      value: 0
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6036155084319659510, guid: c3a95e5f8b6d42a74a59962f615b6603,
         type: 3}
@@ -1832,11 +1802,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6042226828776527452, guid: c3a95e5f8b6d42a74a59962f615b6603,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3a95e5f8b6d42a74a59962f615b6603, type: 3}
